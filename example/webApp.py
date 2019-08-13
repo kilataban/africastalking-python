@@ -25,7 +25,7 @@ class send_sms(Resource):
       return {'hello': 'world'}
     def post(self):
       number = str(request.form['number'])
-      return sms.send("Test message", [number])
+      return sms.send("Welcome to the Farmer's Forecast Information System", [0700745007])
 api.add_resource(send_sms, '/sms')
 
 class send_airtime(Resource):
